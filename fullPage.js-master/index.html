@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+<script src="https://use.fontawesome.com/7916732548.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+    <script src="vendors/jquery.easings.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-RpX8okQqCyUNG7PlOYNybyJXYTtGQH+7rIKiVvg1DLg6jahLEk47VvpUyS+E2/uJ" crossorigin="anonymous"> -->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+
+
+
+
+<script>
+$(document).ready(function() {
+
+
+
+$('#fullpage').fullpage({
+	// sectionsColor: ['#696969', '#696969', '#696969', '#696969', '#696969'],
+});
+
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		//Navigation
+		menu: '#menu',
+		lockAnchors: false,
+		anchors:['firstPage', 'secondPage'],
+		navigation: false,
+		navigationPosition: 'right',
+		navigationTooltips: ['firstSlide', 'secondSlide'],
+		showActiveTooltip: false,
+		slidesNavigation: false,
+		slidesNavPosition: 'bottom',
+
+		//Scrolling
+		css3: true,
+		scrollingSpeed: 2000,
+		autoScrolling: true,
+		fitToSection: true,
+		fitToSectionDelay: 1000,
+		scrollBar: true,
+		easing: 'easeInOutCubic',
+		easingcss3: 'ease',
+		loopBottom: false,
+		loopTop: true,
+		loopHorizontal: true,
+		continuousVertical: true,
+		continuousHorizontal: false,
+		scrollHorizontally: false,
+		interlockedSlides: false,
+		dragAndMove: false,
+		offsetSections: false,
+		resetSliders: false,
+		fadingEffect: false,
+		normalScrollElements: '#element1, .element2',
+		scrollOverflow: true,
+		scrollOverflowReset: false,
+		scrollOverflowOptions: null,
+		touchSensitivity: 15,
+		normalScrollElementTouchThreshold: 5,
+		bigSectionsDestination: null,
+
+
+		//Accessibility
+		keyboardScrolling: true,
+		animateAnchor: true,
+		recordHistory: true,
+
+		//Design
+		controlArrows: true,
+		verticalCentered: true,
+		sectionsColor : ['blue', 'blue'],
+		paddingTop: '3em',
+		paddingBottom: '10px',
+		fixedElements: '#header, .footer',
+		responsiveWidth: 0,
+		responsiveHeight: 0,
+		responsiveSlides: false,
+		parallax: false,
+		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+		//Custom selectors
+		sectionSelector: '.section',
+		slideSelector: '.slide',
+
+		lazyLoading: true,
+
+		//events
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+		afterResize: function(){},
+		afterResponsive: function(isResponsive){},
+		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+	});
+});
+});
+
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		anchors:['firstPage', 'secondPage', 'thirdPage']
+	});
+});
+
+
+
+</script>
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+      </div>
+      <ul class="nav navbar-nav">
+<div id = "navElements">
+
+
+<li><a href="#">About</a></li>
+<li><a href="default.asp">Home</a></li>
+<li><a href="http://alvarotrigo.com/fullPage/#secondPage/2">Resume</></li>
+<li><a href="#">Project</a></li>
+
+    </div>
+  </ul>
+
+
+
+
+
+
+<div id="elements">
+
+<a href="https://www.linkedin.com/in/kathrynkoshinski/">
+        <i class="fa fa-linkedin fa-2x" style="padding-right:30px" aria-hidden="true"></i>
+      </a>
+
+<a href="https://www.facebook.com/katie.koshinski">
+        <i class="fa fa-facebook fa-2x" style="padding-right:30px" aria-hidden="true"></i></a>
+
+<a href="https://github.com/KatieKosh">
+      <i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+
+</div>
+
+    </div>
+  </nav>
+
+
+
+
+
+  <div id="fullpage">
+
+  <!-- <div id = "container">
+<div id = "row">
+<div id = "col-xs-12"> -->
+<div class="section"><div id="name">Kathryn Koshinski<br><div id="title">Full Stack Developer</div></div>
+<!-- </div> -->
+
+
+</div>
+
+  <div class="section"><img src="bookImage.img" style="border:10px solid white";>
+
+<p>Call me, Katie!<br><br> I am a current student at UT's Coding Bootcamp. Immersed in learning Html, CSS, Javascript, API function and backend web development including Node.js and SQL, I will soon be searching for an internship or junior level tech position to utilize these skills.
+I have a Master's of Science in Occupational Therapy and have enjoyed this fulfilling work for over a decade. I'm now seeking new challenges in a rewarding tech career. </p>
+</div>
+
+
+
+
+
+
+    <div class="section"><img src="resumeUse.img" style="width:650px;height:800px; margin-left:450px; border:10px solid grey; margin-bottom: 100px;"></div>
+
+
+
+
+
+<div class="section">
+
+<a href="https://ancient-citadel-52749.herokuapp.com/">
+  <img src="wishList.img" style="width:650px;height:750px; float: right; clear: left; border:10px solid grey;"></a>
+
+<div id = "titleWish"><strong><u>Wish List</u></strong></div><br>
+<br>
+<br>
+<div id="wishListparagraph">
+Wish List is a responsive app dreamed up by myself and 3 other group members. I completed the <u>entire front end</u> of the app.
+</div>
+
+<ul>
+<h3>Please click on the image to the right be been taken to the 'Wish List'. (Be patient....may take a moment to load)</h3><br>
+<h3>Once on the site, click "Login" and choose the <u>Facebook link</u> for ease in navigation.</h3></li>
+</ul>
+
+<!--
+    <div class="section"> -->
+
+      <div class="well well-sm" style="clear:both;padding-top:"20px";">
+
+
+<div id="footerText">
+<i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i>
+kkoshinski@hotmail.com
+<i class="fa fa-mobile fa-1x" aria-hidden="true" style="padding-right="10px";"></i>
+217-972-2467
+
+
+      </div>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+    </div>
+  	<div class="section">Some section</div>
+
+  </div>
+
+
+
+<!-- </div>
+</div> -->
+
+
+</body>
+
+
+</html>
