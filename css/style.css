@@ -18,6 +18,17 @@ margin-left: 575px;
 
 }
 
+#fp-nav ul li a span {
+
+background-color: white;
+
+}
+
+#fp-nav ul li a span:hover {
+
+color: red;
+
+}
 
 .well-lg {
 margin-top: 0px;
